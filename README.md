@@ -16,7 +16,7 @@ In this assignment, we'll use our full-text data from Wikipedia to produce a rud
 
 You'll complete this exercise on just one node (your laptop), but you can also head over to Databricks Community Edition to experiment with your code on a "micro-cluster" for free.
 
-###Set up Spark
+##Set up Spark
 
 For the sake of simplified logistics, we'll be running Spark in "local" mode. This means that your full Spark application will be run on one node, locally, on your laptop.
 
@@ -26,7 +26,7 @@ To create a SparkContext, you need to first create a SparkConfig instance. A Spa
 
 Configure your cluster to run in local mode by implementing val conf and val sc.
 
-###Read-in Wikipedia Data
+##Read-in Wikipedia Data
 
 There are several ways to read data into Spark. The simplest way to read in data is to convert an existing collection in memory to an RDD using the parallelize method of the Spark context.
 
@@ -34,7 +34,7 @@ We have already implemented a method parse in the object WikipediaData object th
 
 Create an RDD (by implementing val wikiRdd) which contains the WikipediaArticle objects of articles.
 
-###Compute a ranking of programming languages
+##Compute a ranking of programming languages
 
 We will use a simple metric for determining the popularity of a programming language: the number of Wikipedia articles that mention the language at least once.
 
